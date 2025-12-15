@@ -1,7 +1,4 @@
-#!/usr/bin/env python3
-"""
-Local Multimodal AI Agent - Main CLI Entry Point
-"""
+
 import click
 import os
 from pathlib import Path
@@ -311,6 +308,13 @@ def classify_paper(text: str, topics: List[str], embedder: TextEmbedder) -> str:
             best_topic = topic
     
     return best_topic
+
+
+@cli.command()
+def chat():
+    """Interactive chat mode with natural language understanding."""
+    from app.llm_agent import interactive_chat
+    interactive_chat()
 
 
 if __name__ == '__main__':

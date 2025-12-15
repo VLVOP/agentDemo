@@ -54,7 +54,7 @@ uv run python main.py add_paper path/to/paper.pdf --topics "CV,NLP,RL"
 参数说明：
 - `path/to/paper.pdf`: PDF 文件路径
 - `--topics`: 逗号分隔的主题列表
-- `--copy`: （可选）复制而非移动原文件
+- `--copy`: 复制而非移动原文件
 
 **示例：**
 ```bash
